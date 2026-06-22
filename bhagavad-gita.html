@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study the Bhagavad Gita Authentically | Vishweshwara Sanskrit</title>
+  <meta name="description" content="Study the Bhagavad Gita verse-by-verse with a Gurukula-trained Sanskrit scholar. Original Sanskrit, Shankarabhashya commentary, and practical application to modern life.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background:var(--obsidian-deep)">
+<canvas id="hero-canvas" style="position:fixed;inset:0;z-index:0;opacity:0.5;pointer-events:none"></canvas>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;position:relative;z-index:1">
+  <div class="lp-content">
+
+    <div class="lp-logo">
+      <img src="assets/logo_icon.png" alt="Vishweshwara Sanskrit" style="width:52px;height:52px;object-fit:contain;mix-blend-mode:screen;filter:brightness(1.3)">
+      <div>
+        <div style="font-family:var(--font-heading);font-size:1rem;letter-spacing:0.12em;color:var(--gold-pure)">VISHWESHWARA SANSKRIT</div>
+        <div style="font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted)">Ancient Wisdom · Modern Illumination</div>
+      </div>
+    </div>
+
+    <div class="lp-badge">📖 Verse-by-Verse · Shankarabhashya · Applied Philosophy</div>
+
+    <h1 class="t-display" style="color:var(--text-white);margin-bottom:16px">
+      The Bhagavad Gītā<br>as a <span class="shimmer-text">Map for Your Life</span>
+    </h1>
+
+    <div class="gold-line"></div>
+
+    <!-- Gita verse -->
+    <div style="margin:24px auto;max-width:560px;border-left:2px solid var(--gold-rich);padding-left:20px;text-align:left">
+      <div class="t-devanagari" style="font-size:1.2rem;margin-bottom:8px">यदा यदा हि धर्मस्य ग्लानिर्भवति भारत</div>
+      <div class="t-shloka">Whenever there is a decline of righteousness, O Arjuna, I manifest myself...</div>
+      <div style="font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-top:8px">— Bhagavad Gita 4.7</div>
+    </div>
+
+    <p class="t-serif" style="color:var(--text-secondary);max-width:540px;margin:0 auto 36px">
+      Not a self-help book. Not a motivational talk. The Bhagavad Gita is a precise conversation between the Absolute and the human soul — studied properly, in original Sanskrit, with classical commentary. I teach it as Arjuna received it: directly, personally, and completely.
+    </p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;max-width:520px;margin:0 auto 36px">
+      <div class="cert-detail-item" style="text-align:center">
+        <div class="d-label">Chapters</div><div class="d-value" style="font-size:0.85rem">All 18 — Full Study</div>
+      </div>
+      <div class="cert-detail-item" style="text-align:center">
+        <div class="d-label">Source</div><div class="d-value" style="font-size:0.85rem">Original Sanskrit + Bhashya</div>
+      </div>
+      <div class="cert-detail-item" style="text-align:center">
+        <div class="d-label">Format</div><div class="d-value" style="font-size:0.85rem">Personal 1-on-1 Sessions</div>
+      </div>
+    </div>
+
+    <div class="lp-form-box">
+      <div style="text-align:center;margin-bottom:28px">
+        <div class="t-label" style="color:var(--gold-muted);margin-bottom:8px">Begin Here</div>
+        <div class="t-title" style="color:var(--text-white);font-size:1.3rem">Request a Bhagavad Gita Consultation</div>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-top:8px">Your study path will be personally designed by Vishweshwara</p>
+      </div>
+
+      <div class="f-row">
+        <div class="f-group">
+          <label class="f-label">Your Name</label>
+          <input class="f-input" type="text" placeholder="e.g. Meera Devi" id="lp-gita-name">
+        </div>
+        <div class="f-group">
+          <label class="f-label">WhatsApp Number</label>
+          <input class="f-input" type="tel" placeholder="+91 00000 00000" id="lp-gita-phone">
+        </div>
+      </div>
+      <div class="f-group">
+        <label class="f-label">What draws you to the Bhagavad Gita?</label>
+        <textarea class="f-textarea" style="min-height:80px" placeholder="Share freely — a life question, a chapter you want to explore, a personal journey..." id="lp-gita-note"></textarea>
+      </div>
+
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+        <a href="#" class="btn btn-whatsapp" style="flex:1;justify-content:center" onclick="handleGitaSubmit(event)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Send via WhatsApp
+        </a>
+        <a href="mailto:visanskrit.solopreneur@gmail.com" class="btn btn-outline" style="flex:1;justify-content:center">Send via Email</a>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:32px">
+      <a href="index.html" style="font-size:0.75rem;color:var(--text-muted);letter-spacing:0.12em;text-transform:uppercase" onmouseover="this.style.color='var(--gold-muted)'" onmouseout="this.style.color='var(--text-muted)'">← Back to Main Site</a>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+function handleGitaSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('lp-gita-name').value || '(not provided)';
+  const phone = document.getElementById('lp-gita-phone').value || '(not provided)';
+  const note = document.getElementById('lp-gita-note').value || '(not provided)';
+  const msg = encodeURIComponent(`🙏 *Bhagavad Gita Consultation Request*\n\nName: ${name}\nPhone: ${phone}\n\nMessage: ${note}\n\nSent via vishweshwarasanskrit.com/bhagavad-gita`);
+  window.open(`https://wa.me/919482698612?text=${msg}`, '_blank');
+}
+</script>
+</body>
+</html>

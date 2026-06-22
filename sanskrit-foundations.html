@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Sanskrit Foundations Authentically | Vishweshwara Sanskrit</title>
+  <meta name="description" content="Master Sanskrit from the ground up — Devanagari script, grammar, and reading original texts. Gurukula-trained teacher with personalized approach. CBSE Sanskrit expert.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background:var(--obsidian-deep)">
+<canvas id="hero-canvas" style="position:fixed;inset:0;z-index:0;opacity:0.5;pointer-events:none"></canvas>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;position:relative;z-index:1">
+  <div class="lp-content">
+
+    <div class="lp-logo">
+      <img src="assets/logo_icon.png" alt="Vishweshwara Sanskrit" style="width:52px;height:52px;object-fit:contain;mix-blend-mode:screen;filter:brightness(1.3)">
+      <div>
+        <div style="font-family:var(--font-heading);font-size:1rem;letter-spacing:0.12em;color:var(--gold-pure)">VISHWESHWARA SANSKRIT</div>
+        <div style="font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted)">Ancient Wisdom · Modern Illumination</div>
+      </div>
+    </div>
+
+    <div class="lp-badge">अ — From Alphabet to Advanced Grammar · CBSE to Ashtadhyayi</div>
+
+    <h1 class="t-display" style="color:var(--text-white);margin-bottom:16px">
+      Master the Architecture<br>of <span class="shimmer-text">Sanskrit Language</span>
+    </h1>
+
+    <div class="gold-line"></div>
+
+    <p class="t-serif" style="color:var(--text-secondary);max-width:540px;margin:16px auto 36px">
+      Sanskrit is the most precisely engineered language in the history of human civilization. Whether you are a school student preparing for CBSE exams or an adult who wants to read original scriptures — I will guide you from your very first letter to full grammatical fluency.
+    </p>
+
+    <!-- Path Options -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:560px;margin:0 auto 36px">
+      <div class="shastra-card" style="padding:20px;cursor:default">
+        <div style="font-size:1.4rem;margin-bottom:8px">📗</div>
+        <div style="font-family:var(--font-heading);font-size:0.9rem;color:var(--text-primary);margin-bottom:6px">Beginner Path</div>
+        <div style="font-size:0.78rem;color:var(--text-muted)">Devanagari · Basic Grammar · Vocabulary · CBSE Preparation</div>
+      </div>
+      <div class="shastra-card" style="padding:20px;cursor:default">
+        <div style="font-size:1.4rem;margin-bottom:8px">📘</div>
+        <div style="font-family:var(--font-heading);font-size:0.9rem;color:var(--text-primary);margin-bottom:6px">Advanced Path</div>
+        <div style="font-size:0.78rem;color:var(--text-muted)">Paninian Vyakarana · Laghukaumudi · Classical Text Analysis · Ashtadhyayi</div>
+      </div>
+    </div>
+
+    <div class="lp-form-box">
+      <div style="text-align:center;margin-bottom:28px">
+        <div class="t-label" style="color:var(--gold-muted);margin-bottom:8px">Begin Here</div>
+        <div class="t-title" style="color:var(--text-white);font-size:1.3rem">Request Your Sanskrit Consultation</div>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-top:8px">Your learning path will be personally designed by Vishweshwara</p>
+      </div>
+
+      <div class="f-row">
+        <div class="f-group">
+          <label class="f-label">Your Name</label>
+          <input class="f-input" type="text" placeholder="e.g. Karthik Iyer" id="lp-skt-name">
+        </div>
+        <div class="f-group">
+          <label class="f-label">WhatsApp Number</label>
+          <input class="f-input" type="tel" placeholder="+91 00000 00000" id="lp-skt-phone">
+        </div>
+      </div>
+      <div class="f-group">
+        <label class="f-label">Current Level</label>
+        <select class="f-select" id="lp-skt-level">
+          <option value="" disabled selected>Select your current level</option>
+          <option>Complete beginner — I know nothing yet</option>
+          <option>I know the Devanagari alphabet</option>
+          <option>CBSE student (Class 6–12)</option>
+          <option>Intermediate — I can read simple texts</option>
+          <option>Advanced — I study independently</option>
+        </select>
+      </div>
+      <div class="f-group">
+        <label class="f-label">What is your goal with Sanskrit?</label>
+        <textarea class="f-textarea" style="min-height:80px" placeholder="CBSE exams, reading scriptures, connecting with heritage, academic research, teaching..." id="lp-skt-note"></textarea>
+      </div>
+
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+        <a href="#" class="btn btn-whatsapp" style="flex:1;justify-content:center" onclick="handleSktSubmit(event)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Send via WhatsApp
+        </a>
+        <a href="mailto:visanskrit.solopreneur@gmail.com" class="btn btn-outline" style="flex:1;justify-content:center">Send via Email</a>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:32px">
+      <a href="index.html" style="font-size:0.75rem;color:var(--text-muted);letter-spacing:0.12em;text-transform:uppercase" onmouseover="this.style.color='var(--gold-muted)'" onmouseout="this.style.color='var(--text-muted)'">← Back to Main Site</a>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+function handleSktSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('lp-skt-name').value || '(not provided)';
+  const phone = document.getElementById('lp-skt-phone').value || '(not provided)';
+  const level = document.getElementById('lp-skt-level').value || '(not specified)';
+  const note = document.getElementById('lp-skt-note').value || '(not provided)';
+  const msg = encodeURIComponent(`🙏 *Sanskrit Foundations Consultation Request*\n\nName: ${name}\nPhone: ${phone}\nLevel: ${level}\n\nGoal: ${note}\n\nSent via vishweshwarasanskrit.com/sanskrit-foundations`);
+  window.open(`https://wa.me/919482698612?text=${msg}`, '_blank');
+}
+</script>
+</body>
+</html>
